@@ -12,7 +12,8 @@ from pydantic import BaseModel, Field
 
 class InvoiceStatus(str, Enum):
     """Invoice status enumeration"""
-    DRAFT = "draft"\n    ISSUED = "issued"
+    DRAFT = "draft"
+    ISSUED = "issued"
     PAID = "paid"
     OVERDUE = "overdue"
     CANCELLED = "cancelled"
